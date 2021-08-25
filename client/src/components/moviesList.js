@@ -24,7 +24,7 @@ function MoviesList() {
       <Container>
       <Message />
         <h1 className="my-5">My Movies</h1>
-        <Dropdown onSelect={( e) => setCurrentCategory(e.target.innerText)}>
+        <Dropdown onSelect={(key, e) => setCurrentCategory(e.target.innerText)}>
           <Dropdown.Toggle variant="secondary">
             {currentCategory}
           </Dropdown.Toggle>
